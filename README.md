@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# 🍿 usePopcorn - Movie Information App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+usePopcorn is a React project that allows users to search for movie titles and view their details using the www.omdbapi.com API. Users can click on any movie to see comprehensive information such as release year, cast, IMDb rating, director, plot summary, and more. Additionally, the app features a star rating component that enables users to rate movies and add them to their "Watched Movies" list. This list is stored in the local storage, so even if the page is refreshed, the data remains intact, allowing users to keep track of the movies they've watched along with their ratings.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [How to run the project](#how-to-run-the-project)
+- [Overview](#overview)
+    - [Features](#features)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+- [My process](#my-process)
+    - [Technologies Used](#technologies-used)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to run the project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Install dependencies using `npm install`
+- Start the project using `npm start`
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Features
 
-### `npm run build`
+- Search: Users can easily search for any movie they want using the search bar, and the app fetches relevant information from the OMDB API to display the movie details.
+- Movie Details: Clicking on any movie in the search results displays detailed information about the movie, including release year, cast, director, and plot summary.
+- Star Rating Component: The app incorporates a customizable star rating component that allows users to rate movies based on their preferences.
+- Watched Movies List: Users can add movies they've watched, along with their ratings, to a personalized "Watched Movies" list. This list persists in the local storage, so users can review their watched movies even after closing or refreshing the page.
+- Custom Hooks: The project includes several custom hooks to enhance code organization and reusability. Some examples include hooks for fetching movie information, storing and retrieving data from local storage, and handling keyboard events.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](./screenshot1.PNG)
+![](./screenshot2.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Live on: [Github Pages](https://aramattamara.github.io/usePopcorn/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React: The front-end of the application is built using React, taking advantage of useState, useEffect, and useRef hooks for state management and handling side effects.
+- OMDB API: The app fetches movie information from the www.omdbapi.com API to provide users with real-time data.
+- Local Storage: Custom hooks are utilized to store and retrieve user data, such as watched movies and their ratings, in the browser's local storage.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The usePopcorn project is designed with modularity and reusability in mind, allowing components like the star rating feature to be utilized across other projects as well. It provides an intuitive and user-friendly interface for movie enthusiasts to explore and rate their favorite films effortlessly.
